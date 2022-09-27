@@ -1,0 +1,19 @@
+
+img{
+   margin-top: -30px;
+    width: 100px;
+    height: 100px;
+}
+.intro{
+    display: flex;
+   justify-content: center;
+  margin-top: -30px;
+   align-items: center;
+  
+}
+.butn{
+    align-self: flex-end;
+}
+.ath{
+   margin-right: 50px;
+}

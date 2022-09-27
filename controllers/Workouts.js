@@ -62,7 +62,9 @@ createWorkout: async (req, res) => {
   },
   deleteWorkout: async (req,res) => {
     try{
-        await Workout.remove({_id: req.user.id})
+        await Workout.remove({_id: req.params.id})
+        console.log("Workout deleted");
+        res.redirect("/profile")
     }catch (err){
         console.log(err)
     }

@@ -34,20 +34,28 @@
             </form>
           </div>
       </div>
-      <div class="col-6">
+      <div class="container">
         <ul class="row list-unstyled">
-        <% for(var i=0; i<workouts.length; i++) {%>
-          <li class="col-6 justify-content-between mt-5">
-            <a href="/workouts/<%= workouts[i]._id%>">
-              <h1>"<%=workouts[i].name%>"</h1>
-            </a>
-          </li>
-        <% } %>
+          <% for(var i=0; i<workouts.length; i++) {%>
+              <li class="card" style="width: 300px">
+                 <div class="card-header">Header</div>
+                 <div class="card-body"></div>
+                  <div class="card-title">User</div>
+                    <div class="card-text">
+                      <a href="/workouts/<%= workouts[i]._id%>">
+                      <h2><%=workouts[i].name%></h2>
+                      </a>
+                    </div>
+                  </div>
+                 </div>
+              </li>
+          <% } %>
         </ul>
+      </div>  
         <div class="row justify-content-center mt-5">
           <a class="btn btn-primary" href="/feed">Return to Feed</a>
         </div>  
-      </div>  
+      
     </div>
   </div>
 </div>
